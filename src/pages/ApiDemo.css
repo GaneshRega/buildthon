@@ -1,0 +1,6 @@
+.api-demo { padding: 2rem 1.5rem 4rem; }
+.api-demo__header { margin-bottom: 1.5rem; }
+.api-demo__header h1, .api-demo__header h2 { margin-bottom: 0.25rem; }
+.api-demo__error { color: var(--danger); margin-top: 1rem; font-size: 0.9rem; }
+.api-demo__result { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.api-demo__result-id { color: var(--primary-light); font-size: 0.8rem; font-weight: 600; margin-bottom: 0.25rem; }

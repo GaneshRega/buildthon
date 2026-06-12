@@ -1,0 +1,43 @@
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.15s ease;
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.2s ease;
+}
+
+.modal--sm { max-width: 380px; }
+.modal--md { max-width: 560px; }
+.modal--lg { max-width: 800px; }
+
+.modal__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal__title { font-size: 1.1rem; font-weight: 600; }
+
+.modal__close {
+  background: none; border: none; color: var(--text-muted);
+  cursor: pointer; font-size: 1rem; padding: 0.25rem 0.5rem;
+  border-radius: 6px; transition: all var(--transition);
+}
+.modal__close:hover { background: var(--surface2); color: var(--text); }
+
+.modal__body { padding: 1.5rem; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }

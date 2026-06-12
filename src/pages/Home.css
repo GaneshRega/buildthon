@@ -1,0 +1,47 @@
+.home { padding-bottom: 4rem; }
+
+.hero {
+  text-align: center;
+  padding: 5rem 1.5rem 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero__badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.3);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  letter-spacing: -1.5px;
+}
+
+.hero__gradient {
+  background: linear-gradient(135deg, #6366f1, #a78bfa, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__desc {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.feature-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.feature-title { font-size: 0.95rem; font-weight: 600; }

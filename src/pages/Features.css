@@ -1,0 +1,19 @@
+.features-page { padding: 2rem 1.5rem 4rem; }
+.features-page h1 { margin-bottom: 0.25rem; }
+
+.todo-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.todo-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+  background: var(--surface2);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+.todo-item--done span { text-decoration: line-through; color: var(--text-muted); }
+.todo-delete {
+  background: none; border: none; color: var(--text-muted);
+  cursor: pointer; font-size: 0.8rem; padding: 0.25rem 0.5rem;
+  border-radius: 6px; transition: all var(--transition);
+}
+.todo-delete:hover { background: rgba(239,68,68,0.15); color: var(--danger); }
